@@ -1,0 +1,209 @@
+html,
+body {
+  background-color: white;
+  margin: 0;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.main-container {
+  width: 600px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 8%;
+  z-index: 5;
+  box-shadow: 0 12px 18px #e9effb;
+}
+
+.left-container {
+  display: grid;
+  justify-content: center;
+  background: rgb(5, 27, 206);
+  background: linear-gradient(0deg, rgb(5, 27, 206) 0%, rgb(155, 80, 255) 100%);
+  z-index: 6;
+  border-radius: 20px;
+  width: 100%;
+  height: 95%;
+  margin-right: 50px;
+}
+.left-container .result {
+  margin: 25px 0;
+  font-size: 1.5rem;
+}
+.left-container .circle {
+  margin-left: 24%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(70, 51, 237);
+  background: linear-gradient(0deg, rgb(70, 51, 237) 0%, rgb(76, 35, 202) 100%);
+}
+.left-container .circle p {
+  color: #887afc;
+  font-size: 0.8rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-container .circle h1 {
+  color: #fefefa;
+  font-size: 3.5rem;
+  margin-top: 40px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffbff;
+  margin-bottom: 0;
+}
+.left-container p {
+  margin-top: 0;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.left-container .white-ish {
+  color: #d0caff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.right-container {
+  font-size: 1.1rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: white;
+  border-radius: 8%;
+  margin: 25px 30px;
+}
+.right-container .right-item {
+  height: 40px;
+  align-items: center;
+  margin: 15px 0px;
+  padding: 0 15px;
+  border-radius: 9px;
+  display: flex;
+}
+.right-container .right-item .name-with-rate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.right-container .right-item .main-score {
+  color: #2d3246;
+  font-weight: 600;
+}
+.right-container .right-item span {
+  color: #9698a4;
+}
+.right-container h4 {
+  margin: 0 10px;
+}
+.right-container .summary {
+  font-size: 1.5rem;
+}
+.right-container .reaction {
+  color: #e98f90;
+  background-color: #fff6f5;
+}
+.right-container .memory {
+  color: #e6bf75;
+  background-color: #fffbf2;
+}
+.right-container .verbal {
+  color: #4aae91;
+  background-color: #f2fbfa;
+}
+.right-container .visual {
+  color: #192881;
+  background-color: #f3f3fd;
+}
+.right-container button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #303b59;
+  color: #fafeff;
+  font-size: 1rem;
+}
+.right-container button:hover {
+  background-color: #4a36f2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 35%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    height: 700px;
+    width: 400px;
+  }
+  .left-container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    margin-left: 120px;
+  }
+  .attribution {
+    display: block;
+    position: absolute;
+    bottom: -7%;
+    left: 22%;
+  }
+  button {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    height: 700px;
+    width: 250px;
+  }
+  .left-container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    margin-left: 120px;
+  }
+  .attribution {
+    display: block;
+    position: absolute;
+    bottom: -7%;
+    left: 22%;
+  }
+  button {
+    margin-top: 25px;
+  }
+}/*# sourceMappingURL=styles.css.map */
